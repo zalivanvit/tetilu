@@ -3,49 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Tetilu</title>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <div id="user-information" class="container">
-    <h1 class="container-title">Registration</h1>
-    <div class="navigation">
-        <h2 class="tablet-element">Registration</h2>
-        <label>
-            <i class="fa fa-circle active" aria-hidden="true"></i>
-            <i class="fa fa-circle-o" aria-hidden="true"></i>
-            <div class="navigation__description navigation__description-active">
-                <span class="description__title">Step 1</span>
-                <span class="description__body">User information</span>
-            </div>
-        </label>
-        <label>
-            <i class="fa fa-circle" aria-hidden="true"></i>
-            <div class="navigation__description">
-                <span class="description__title">Step 2</span>
-                <span class="description__body">Business information</span>
-            </div>
-        </label>
-        <label>
-            <i class="fa fa-circle" aria-hidden="true"></i>
-            <div class="navigation__description">
-                <span class="description__title">Step 3</span>
-                <span class="description__body">Additional information</span>
-            </div>
-        </label>
-        <label>
-            <i class="fa fa-circle" aria-hidden="true"></i>
-            <div class="navigation__description">
-                <span class="description__title">Step 4</span>
-                <span class="description__body">Services</span>
-            </div>
-        </label>
-    </div>
-    <div class="registration-area">
-        <h2>User information</h2>
+    <h1 class="page-title">Registration</h1>
+    <div class="content">
+        <div class="navigation">
+            <h2 class="tablet-element">Registration</h2>
+            <label class="navigation__item navigation__item-active">
+                <div class="navigation-check">
+                    <i class="circle-full" aria-hidden="true"></i>
+                </div>
+                <div class="navigation__description navigation__description-active">
+                    <span class="description__title">Step 1</span>
+                    <span class="description__body">User information</span>
+                </div>
+            </label>
+            <label class="navigation__item">
+                <div class="navigation-check">
+                    <i class="circle-empty" aria-hidden="true"></i>
+                </div>
+                <div class="navigation__description">
+                    <span class="description__title">Step 2</span>
+                    <span class="description__body">Business information</span>
+                </div>
+            </label>
+            <label class="navigation__item">
+                <div class="navigation-check">
+                    <i class="circle-empty" aria-hidden="true"></i>
+                </div>
+                <div class="navigation__description">
+                    <span class="description__title">Step 3</span>
+                    <span class="description__body">Additional information</span>
+                </div>
+            </label>
+            <label class="navigation__item">
+                <div class="navigation-check">
+                    <i class="circle-empty" aria-hidden="true"></i>
+                </div>
+                <div class="navigation__description">
+                    <span class="description__title">Step 4</span>
+                    <span class="description__body">Services</span>
+                </div>
+            </label>
+        </div>
+        <div class="registration-area">
+            <h2>User information</h2>
             <div class="registration-area__fields">
                 <div class="fields-start-end">
                     <label>
@@ -78,52 +84,60 @@
                     </label>
                 </div>
             </div>
-        <div class="registration-area__buttons">
-            <button class="buttons__reset">Reset all</button>
-            <a href="#business-information" class="buttons__continue" >Continue</a>
+            <div class="registration-area__buttons">
+                <button class="buttons__reset">Reset all</button>
+                <a href="#business-information" class="buttons__continue" >Continue</a>
+            </div>
         </div>
     </div>
+
 </div>
 
 
 <div id="business-information" class="container">
-    <h1 class="container-title">Registration</h1>
-    <div class="navigation">
-        <h2 class="tablet-element">Registration</h2>
-        <label>
-            <i class="fa fa-circle active" aria-hidden="true"></i>
-            <i class="fa fa-circle-o" aria-hidden="true"></i>
-            <i class="fa fa-circle-o" aria-hidden="true"></i>
-            <div class="navigation__description navigation__description-active">
-                <span class="description__title">Step 1</span>
-                <span class="description__body">User information</span>
-            </div>
-        </label>
-        <label>
-            <i class="fa fa-circle active" aria-hidden="true"></i>
-            <i class="fa fa-circle" aria-hidden="true"></i>
-            <div class="navigation__description navigation__description-active">
-                <span class="description__title">Step 2</span>
-                <span class="description__body">Business information</span>
-            </div>
-        </label>
-        <label>
-            <i class="fa fa-circle" aria-hidden="true"></i>
-            <div class="navigation__description">
-                <span class="description__title">Step 3</span>
-                <span class="description__body">Additional information</span>
-            </div>
-        </label>
-        <label>
-            <i class="fa fa-circle" aria-hidden="true"></i>
-            <div class="navigation__description">
-                <span class="description__title">Step 4</span>
-                <span class="description__body">Services</span>
-            </div>
-        </label>
-    </div>
-    <div class="registration-area">
-        <h2>Business information</h2>
+    <h1 class="page-title">Registration</h1>
+    <div class="content">
+        <div class="navigation">
+            <h2 class="tablet-element">Registration</h2>
+            <label class="navigation__item navigation__item-active">
+                <div class="navigation-check">
+                    <i class="circle-full" aria-hidden="true"></i>
+                </div>
+                <div class="navigation__description navigation__description-active">
+                    <span class="description__title">Step 1</span>
+                    <span class="description__body">User information</span>
+                </div>
+            </label>
+            <label class="navigation__item navigation__item-active">
+                <div class="navigation-check">
+                    <i class="circle-full" aria-hidden="true"></i>
+                </div>
+                <div class="navigation__description navigation__description-active">
+                    <span class="description__title">Step 2</span>
+                    <span class="description__body">Business information</span>
+                </div>
+            </label>
+            <label class="navigation__item">
+                <div class="navigation-check">
+                    <i class="circle-empty" aria-hidden="true"></i>
+                </div>
+                <div class="navigation__description">
+                    <span class="description__title">Step 3</span>
+                    <span class="description__body">Additional information</span>
+                </div>
+            </label>
+            <label class="navigation__item">
+                <div class="navigation-check">
+                    <i class="circle-empty" aria-hidden="true"></i>
+                </div>
+                <div class="navigation__description">
+                    <span class="description__title">Step 4</span>
+                    <span class="description__body">Services</span>
+                </div>
+            </label>
+        </div>
+        <div class="registration-area">
+            <h2>Business information</h2>
             <div class="registration-area__fields">
                 <div class="fields-start-end">
                     <label>
@@ -159,55 +173,60 @@
                     <button class="additional-phone">Additional phone</button>
                 </div>
             </div>
-        <div class="registration-area__buttons">
-            <button class="buttons__reset">Reset all</button>
-            <a href="#user-information" class="buttons__back">Back</a>
-            <a href="#additional-information" class="buttons__continue">Continue</a>
+            <div class="registration-area__buttons">
+                <button class="buttons__reset">Reset all</button>
+                <a href="#user-information" class="buttons__back">Back</a>
+                <a href="#additional-information" class="buttons__continue">Continue</a>
+            </div>
         </div>
     </div>
 </div>
 
 
 <div id="additional-information" class="container">
-    <h1 class="container-title">Registration</h1>
-    <div class="navigation">
-        <h2 class="tablet-element">Registration</h2>
-        <label>
-            <i class="fa fa-circle active" aria-hidden="true"></i>
-            <i class="fa fa-circle-o" aria-hidden="true"></i>
-            <i class="fa fa-circle-o" aria-hidden="true"></i>
-            <div class="navigation__description navigation__description-active">
-                <span class="description__title">Step 1</span>
-                <span class="description__body">User information</span>
-            </div>
-        </label>
-        <label>
-            <i class="fa fa-circle active" aria-hidden="true"></i>
-            <i class="fa fa-circle-o" aria-hidden="true"></i>
-            <i class="fa fa-circle-o" aria-hidden="true"></i>
-            <div class="navigation__description navigation__description-active">
-                <span class="description__title">Step 2</span>
-                <span class="description__body">Business information</span>
-            </div>
-        </label>
-        <label>
-            <i class="fa fa-circle active" aria-hidden="true"></i>
-            <i class="fa fa-circle" aria-hidden="true"></i>
-            <div class="navigation__description navigation__description-active">
-                <span class="description__title">Step 3</span>
-                <span class="description__body">Additional information</span>
-            </div>
-        </label>
-        <label>
-            <i class="fa fa-circle" aria-hidden="true"></i>
-            <div class="navigation__description">
-                <span class="description__title">Step 4</span>
-                <span class="description__body">Services</span>
-            </div>
-        </label>
-    </div>
-    <div class="registration-area">
-        <h2>Additional information</h2>
+    <h1 class="page-title">Registration</h1>
+    <div class="content">
+        <div class="navigation">
+            <h2 class="tablet-element">Registration</h2>
+            <label class="navigation__item navigation__item-active">
+                <div class="navigation-check">
+                    <i class="circle-full" aria-hidden="true"></i>
+                </div>
+                <div class="navigation__description navigation__description-active">
+                    <span class="description__title">Step 1</span>
+                    <span class="description__body">User information</span>
+                </div>
+            </label>
+            <label class="navigation__item navigation__item-active">
+                <div class="navigation-check">
+                    <i class="circle-full" aria-hidden="true"></i>
+                </div>
+                <div class="navigation__description navigation__description-active">
+                    <span class="description__title">Step 2</span>
+                    <span class="description__body">Business information</span>
+                </div>
+            </label>
+            <label class="navigation__item navigation__item-active">
+                <div class="navigation-check">
+                    <i class="circle-full" aria-hidden="true"></i>
+                </div>
+                <div class="navigation__description navigation__description-active">
+                    <span class="description__title">Step 3</span>
+                    <span class="description__body">Additional information</span>
+                </div>
+            </label>
+            <label class="navigation__item">
+                <div class="navigation-check">
+                    <i class="circle-empty" aria-hidden="true"></i>
+                </div>
+                <div class="navigation__description">
+                    <span class="description__title">Step 4</span>
+                    <span class="description__body">Services</span>
+                </div>
+            </label>
+        </div>
+        <div class="registration-area">
+            <h2>Additional information</h2>
             <div class="registration-area__fields">
                 <div class="fields-start">
                     <label>
@@ -228,99 +247,103 @@
                     </label>
                 </div>
             </div>
-        <div class="registration-area__buttons">
-            <button class="buttons__reset">Reset all</button>
-            <a href="#business-information" class="buttons__back">Back</a>
-            <a href="#services" class="buttons__continue">Continue</a>
+            <div class="registration-area__buttons">
+                <button class="buttons__reset">Reset all</button>
+                <a href="#business-information" class="buttons__back">Back</a>
+                <a href="#services" class="buttons__continue">Continue</a>
+            </div>
         </div>
     </div>
 </div>
 
 
 <div id="services" class="container">
-    <h1 class="container-title">Registration</h1>
-    <div class="navigation">
-        <h2 class="tablet-element">Registration</h2>
-        <label>
-            <i class="fa fa-circle active" aria-hidden="true"></i>
-            <i class="fa fa-circle-o" aria-hidden="true"></i>
-            <i class="fa fa-circle-o" aria-hidden="true"></i>
-            <div class="navigation__description navigation__description-active">
-                <span class="description__title">Step 1</span>
-                <span class="description__body">User information</span>
-            </div>
-        </label>
-        <label>
-            <i class="fa fa-circle active" aria-hidden="true"></i>
-            <i class="fa fa-circle-o" aria-hidden="true"></i>
-            <i class="fa fa-circle-o" aria-hidden="true"></i>
-            <div class="navigation__description navigation__description-active">
-                <span class="description__title">Step 2</span>
-                <span class="description__body">Business information</span>
-            </div>
-        </label>
-        <label>
-            <i class="fa fa-circle active" aria-hidden="true"></i>
-            <i class="fa fa-circle-o" aria-hidden="true"></i>
-            <i class="fa fa-circle-o" aria-hidden="true"></i>
-            <div class="navigation__description navigation__description-active">
-                <span class="description__title">Step 3</span>
-                <span class="description__body">Additional information</span>
-            </div>
-        </label>
-        <label>
-            <i class="fa fa-circle active" aria-hidden="true"></i>
-            <i class="fa fa-circle" aria-hidden="true"></i>
-            <div class="navigation__description navigation__description-active">
-                <span class="description__title">Step 4</span>
-                <span class="description__body">Services</span>
-            </div>
-        </label>
-    </div>
-    <div class="registration-area">
-        <h2>Services</h2>
-        <div class="registration-area__fields">
-            <h2>Service 1</h2>
-            <div class="fields-start-end">
-                <label>
-                    <span>Title</span>
-                    <input type="text" class="field">
-                </label>
-                <label>
-                    <span></span>
-                    <input type="text" class="field" placeholder="Description">
-                </label>
-            </div>
-            <div class="fields-start">
-                <label>
-                    <span>User Main Photo (You can use JPG, PNG and GIF formats)</span>
-                    <input type="file" class="file-upload">
-                </label>
-            </div>
-            <div class="fields-start">
-                <label>
-                    <span>Photo Gallery Uploads (You can use JPG, PNG and GIF formats)</span>
-                    <input type="file" class="file-upload">
-                </label>
-            </div>
-            <div class="fields-start-end">
-                <label>
-                    <span>Currency</span>
-                    <select class="field">
-                        <option>United States Dollar (USD)</option>
-                    </select>
-                </label>
-                <label>
-                    <span>Price</span>
-                    <span class="dollar">$</span><input type="number" class="field">
-                </label>
-            </div>
+    <h1 class="page-title">Registration</h1>
+    <div class="content">
+        <div class="navigation">
+            <h2 class="tablet-element">Registration</h2>
+            <label class="navigation__item navigation__item-active">
+                <div class="navigation-check">
+                    <i class="circle-full" aria-hidden="true"></i>
+                </div>
+                <div class="navigation__description navigation__description-active">
+                    <span class="description__title">Step 1</span>
+                    <span class="description__body">User information</span>
+                </div>
+            </label>
+            <label class="navigation__item navigation__item-active">
+                <div class="navigation-check">
+                    <i class="circle-full" aria-hidden="true"></i>
+                </div>
+                <div class="navigation__description navigation__description-active">
+                    <span class="description__title">Step 2</span>
+                    <span class="description__body">Business information</span>
+                </div>
+            </label>
+            <label class="navigation__item navigation__item-active">
+                <div class="navigation-check">
+                    <i class="circle-full" aria-hidden="true"></i>
+                </div>
+                <div class="navigation__description navigation__description-active">
+                    <span class="description__title">Step 3</span>
+                    <span class="description__body">Additional information</span>
+                </div>
+            </label>
+            <label class="navigation__item navigation__item-active">
+                <div class="navigation-check">
+                    <i class="circle-full" aria-hidden="true"></i>
+                </div>
+                <div class="navigation__description navigation__description-active">
+                    <span class="description__title">Step 4</span>
+                    <span class="description__body">Services</span>
+                </div>
+            </label>
         </div>
-        <button class="buttons__reset">Additional service</button>
-        <div class="registration-area__buttons">
-            <button class="buttons__reset">Reset all</button>
-            <a href="#additional-information" class="buttons__back">Back</a>
-            <a href="#" class="buttons__continue">Finish</a>
+        <div class="registration-area">
+            <h2>Services</h2>
+            <div class="registration-area__fields">
+                <h2>Service 1</h2>
+                <div class="fields-start-end">
+                    <label>
+                        <span>Title</span>
+                        <input type="text" class="field">
+                    </label>
+                    <label>
+                        <span></span>
+                        <input type="text" class="field" placeholder="Description">
+                    </label>
+                </div>
+                <div class="fields-start">
+                    <label>
+                        <span>User Main Photo (You can use JPG, PNG and GIF formats)</span>
+                        <input type="file" class="file-upload">
+                    </label>
+                </div>
+                <div class="fields-start">
+                    <label>
+                        <span>Photo Gallery Uploads (You can use JPG, PNG and GIF formats)</span>
+                        <input type="file" class="file-upload">
+                    </label>
+                </div>
+                <div class="fields-start-end">
+                    <label>
+                        <span>Currency</span>
+                        <select class="field">
+                            <option>United States Dollar (USD)</option>
+                        </select>
+                    </label>
+                    <label>
+                        <span>Price</span>
+                        <span class="dollar">$</span><input type="number" class="field">
+                    </label>
+                </div>
+            </div>
+            <button class="buttons__reset">Additional service</button>
+            <div class="registration-area__buttons">
+                <button class="buttons__reset">Reset all</button>
+                <a href="#additional-information" class="buttons__back">Back</a>
+                <a href="#" class="buttons__continue">Finish</a>
+            </div>
         </div>
     </div>
 </div>
