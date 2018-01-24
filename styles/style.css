@@ -6,11 +6,11 @@ body {
     margin: 0;
     padding: 0;
     link: white;
-    background-color: #a7e5ff;
 }
 
 .container {
-    width: 73.125%;
+    width: 1200px;
+    height: 700px;
     margin: 0 auto;
     padding: 0;
 }
@@ -20,4 +20,20 @@ body {
     display: table;
     clear: both;
     visibility: hidden;
+}
+
+.navigation {
+    width: 276px;
+    height: 100%;
+    color: #ffffff;
+    background-color: #0c5ea5;
+}
+
+.navigation__description {
+    color: #ffffff;
+}
+
+.registration-area {
+    width: 100%;
+    height: 100%;
 }
