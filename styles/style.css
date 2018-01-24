@@ -20,6 +20,10 @@ html,body{
     overflow-y:hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
 .page-title {
     text-align: center;
     color: #ffffff;
@@ -40,7 +44,7 @@ html,body{
     margin: 0 auto;
     padding: 0;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     border-radius: 10px;
 }
@@ -80,19 +84,6 @@ html,body{
     border: none;
 }
 
-/*.circle-full:before {*/
-    /*display: block;*/
-    /*min-width: 14px;*/
-    /*max-width: 14px;*/
-    /*min-height: 14px;*/
-    /*max-height: 14px;*/
-    /*background-color: rgba(255, 255, 255, 0);*/
-    /*border: 1px solid #ffffff;*/
-    /*-moz-border-radius: 14px;*/
-    /*-webkit-border-radius: 14px;*/
-    /*border-radius: 14px;*/
-/*}*/
-
 .circle-full {
     position: relative;
     display:block;
@@ -105,8 +96,6 @@ html,body{
     text-align:center;
     text-decoration:none;
     background: #0c5ea5;
-    /*font-size:20px;*/
-    /*font-weight:bold;*/
 }
 
 .circle-full::before {
@@ -169,8 +158,112 @@ html,body{
 
 .registration-area {
     width: 80%;
-    min-height: 500px;
+    min-height: 430px;
     background-color: #ffffff;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.fields-title {
+    margin: 0;
+    font-size: 1.7em;
+    color: #000;
+}
+
+.fields-start-end {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.title-of-input {
+    display: block;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-top: 10px;
+    line-height: 43px;
+}
+
+.field {
+    width:92%;
+    border: 0 solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+    color: #3B3B3B;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.field:focus {
+    width:92%;
+    border: 0 solid #E0E0E0;
+    border-bottom: 1px solid #2387DD;
+    outline: none;
+}
+
+.fields-block {
+    width: 48%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.field:focus+span {
+    color: #2387DD;
+}
+
+.registration-area__buttons {
+    width: 95%;
+    /*margin-top: 105px;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons__reset {
+    border: none;
+    background-color: #fff;
+    text-transform: uppercase;
+    color: #0C5EA5;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 0.1px;
+    /*transform: scale(1, 1.1);*/
+    line-height: 20px;
+}
+
+.button:active {
+    outline: none;
+    border: 0 solid #E0E0E0;
+}
+
+.buttons__continue {
+    width: 135px;
+    line-height: 40px;
+    font-weight: bold;
+    background-color: #0C5EA5;
+    border-radius: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.buttons__back {
+    width: 135px;
+    line-height: 40px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    border: 2px solid #0C5EA5;
+    border-radius: 40px;
+    text-align: center;
+    color: #0C5EA5;
+    text-transform: uppercase;
+    margin-left: 235px;
+}
+
