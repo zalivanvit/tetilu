@@ -49,13 +49,6 @@ a {
     border-radius: 10px;
 }
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-    visibility: hidden;
-}
-
 .tablet-element {
     display: none;
 }
@@ -154,7 +147,6 @@ a {
     font-weight: 400;
     margin: 0;
 }
-
 
 .registration-area {
     width: 80%;
@@ -265,7 +257,6 @@ a {
     color: #0C5EA5;
     font-weight: bold;
     font-size: 13px;
-    letter-spacing: 0.1px;
     line-height: 20px;
 }
 
@@ -311,11 +302,135 @@ a {
     color: #0C5EA5;
     font-weight: bold;
     font-size: 13px;
-    letter-spacing: 0.3px;
     line-height: 20px;
 }
 
 .file-upload {
     width: 100%;
+}
+
+@media (max-width: 1200px) {
+    html {
+        background: none;
+    }
+
+    .page-title {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .content {
+        width: 100%;
+        height: 100%;
+        max-width: 1200px;
+        border-radius: 0;
+    }
+
+    .tablet-element {
+        display: block;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .navigation {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    html,body{
+        overflow-y: auto;
+    }
+
+    .registration-area__buttons {
+        display: none;
+    }
+
+    .page-title.mobile-element {
+        display: none;
+    }
+
+    .page-title {
+        display: block;
+        color: #0C5EA5;
+        z-index: 5;
+        margin: 0 0 5px 0;
+    }
+
+    .content {
+        box-sizing: border-box;
+        height: 100%;
+        box-shadow: inset 0 3px 5px 0 rgba(130,130,130,1);
+    }
+
+    .fields-title {
+        content: '';
+    }
+
+    .registration-area {
+        box-shadow: inset 0 3px 5px 0 rgba(130,130,130,1);
+        border-radius: 0;
+    }
+
+    .tablet-element {
+        display: none;
+    }
+
+    .navigation {
+        width: 54px;
+        max-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .navigation__description {
+        display: none;
+    }
+
+    .navigation-check {
+        margin: 20px auto;
+    }
+
+    .registration-area {
+        width: 100%;
+    }
+
+    .fields-start-end, .fields-between, .fields-start {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .fields-block {
+        width: 100%;
+    }
+
+    .registration-area__buttons-mobile {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        /*margin: 20px auto;*/
+    }
+
+    .buttons__reset-mobile {
+        width: 50%;
+        margin: 20px auto 0;
+    }
+
+    .buttons__continue-mobile {
+        margin: 20px 0;
+    }
+
+    .buttons__reset.buttons__reset-left {
+        display: block;
+        width: 100%;
+        margin: 20px auto;
+    }
+
 }
 
