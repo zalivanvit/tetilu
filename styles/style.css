@@ -176,10 +176,25 @@ a {
     color: #000;
 }
 
+.fields-title-type {
+    margin-top: 20px;
+}
+
 .fields-start-end {
     display: flex;
     align-items: center;
     justify-content:space-between;
+}
+
+.fields-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fields-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .title-of-input {
@@ -201,11 +216,25 @@ a {
     margin-bottom: 15px;
 }
 
+.field-confirm {
+    margin-top: 42px;
+}
+
+.field-confirm::placeholder {
+    font-size: 0.82em;
+    font-weight: 400;
+    color: rgba(172, 172, 172, 1);
+}
+
 .field:focus {
     width:92%;
     border: 0 solid #E0E0E0;
     border-bottom: 1px solid #2387DD;
     outline: none;
+}
+
+.field-select {
+    background-color: #fff;
 }
 
 .fields-block {
@@ -214,13 +243,16 @@ a {
     flex-direction: column-reverse;
 }
 
+.fields-block-upload {
+    width: 95%;
+}
+
 .field:focus+span {
     color: #2387DD;
 }
 
 .registration-area__buttons {
     width: 95%;
-    /*margin-top: 105px;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -234,8 +266,12 @@ a {
     font-weight: bold;
     font-size: 13px;
     letter-spacing: 0.1px;
-    /*transform: scale(1, 1.1);*/
     line-height: 20px;
+}
+
+.buttons__reset-left {
+    margin: 30px 0;
+    width: 25%;
 }
 
 .button:active {
@@ -265,5 +301,21 @@ a {
     color: #0C5EA5;
     text-transform: uppercase;
     margin-left: 235px;
+}
+
+.additional-phone {
+    height: 20px;
+    border: none;
+    background-color: #fff;
+    text-transform: uppercase;
+    color: #0C5EA5;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    line-height: 20px;
+}
+
+.file-upload {
+    width: 100%;
 }
 

@@ -6,6 +6,330 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html {
+            background: url('../images/bg.png') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        body {
+            width: 100%;
+            font-family: 'Lato', sans-serif;
+            color: #ACACAC;
+            font-size: 14px;
+            line-height: 42px;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,body{
+            overflow-y:hidden;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .page-title {
+            text-align: center;
+            color: #ffffff;
+            font-size: 35px;
+            font-weight: bold;
+            line-height: 50px;
+            margin-bottom: 27px;
+        }
+
+        .container {
+            padding-top: 40px;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .content {
+            max-width: 910px;
+            margin: 0 auto;
+            padding: 0;
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            border-radius: 10px;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .tablet-element {
+            display: none;
+        }
+
+        .navigation {
+            width: 25%;
+            min-height: 500px;
+            background-color: #0c5ea5;
+            border-bottom-left-radius: 15px;
+            border-top-left-radius: 15px;
+            color: rgba(255, 255, 255, 0.51);
+        }
+
+        .circle-empty {
+            display: block;
+            min-width: 10px;
+            max-width: 10px;
+            min-height: 10px;
+            max-height: 10px;
+            line-height: 0;
+            background-color: rgba(255, 255, 255, 0.51);
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            margin: 2px;
+            border: none;
+        }
+
+        .circle-full {
+            position: relative;
+            display:block;
+            width:14px;
+            height:14px;
+            line-height:50px;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            color:#f5f5f5;
+            text-align:center;
+            text-decoration:none;
+            background: #0c5ea5;
+        }
+
+        .circle-full::before {
+            display: block;
+            min-width: 10px;
+            max-width: 10px;
+            min-height: 10px;
+            max-height: 10px;
+            line-height: 0;
+            background-color: #ffffff;
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            margin: 2px;
+            border: none;
+            content: ' ';
+        }
+
+        .navigation__description {
+            display: inline-block;
+        }
+
+        .navigation__description-active, .navigation__item-active {
+            color: #ffffff;
+        }
+
+        .navigation__item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 27px 0;
+            line-height: 18px;
+            vertical-align: top;
+        }
+
+        .navigation-check {
+            min-width: 25px;
+            min-height: 21px;
+            margin: 17px 5px 17px 21px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .description__title {
+            display: block;
+            font-size: 16px;
+            line-height: 18px;
+            text-transform: uppercase;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .description__body {
+            line-height: 20px;
+            font-size: 12px;
+            font-weight: 400;
+            margin: 0;
+        }
+
+
+        .registration-area {
+            width: 80%;
+            min-height: 430px;
+            background-color: #ffffff;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px;
+            padding-left: 30px;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .fields-title {
+            margin: 0;
+            font-size: 1.7em;
+            color: #000;
+        }
+
+        .fields-title-type {
+            margin-top: 20px;
+        }
+
+        .fields-start-end {
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+        }
+
+        .fields-between {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .fields-start {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .title-of-input {
+            display: block;
+            font-size: 14px;
+            margin-left: 5px;
+            margin-top: 10px;
+            line-height: 43px;
+        }
+
+        .field {
+            width:92%;
+            border: 0 solid #E0E0E0;
+            border-bottom: 1px solid #E0E0E0;
+            color: #3B3B3B;
+            font-size: 17px;
+            line-height: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .field-confirm {
+            margin-top: 42px;
+        }
+
+        .field-confirm::placeholder {
+            font-size: 0.82em;
+            font-weight: 400;
+            color: rgba(172, 172, 172, 1);
+        }
+
+        .field:focus {
+            width:92%;
+            border: 0 solid #E0E0E0;
+            border-bottom: 1px solid #2387DD;
+            outline: none;
+        }
+
+        .field-select {
+            background-color: #fff;
+        }
+
+        .fields-block {
+            width: 48%;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .fields-block-upload {
+            width: 95%;
+        }
+
+        .field:focus+span {
+            color: #2387DD;
+        }
+
+        .registration-area__buttons {
+            width: 95%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .buttons__reset {
+            border: none;
+            background-color: #fff;
+            text-transform: uppercase;
+            color: #0C5EA5;
+            font-weight: bold;
+            font-size: 13px;
+            letter-spacing: 0.1px;
+            line-height: 20px;
+        }
+
+        .buttons__reset-left {
+            margin: 30px 0;
+            width: 25%;
+        }
+
+        .button:active {
+            outline: none;
+            border: 0 solid #E0E0E0;
+        }
+
+        .buttons__continue {
+            width: 135px;
+            line-height: 40px;
+            font-weight: bold;
+            background-color: #0C5EA5;
+            border-radius: 40px;
+            text-align: center;
+            color: #FFFFFF;
+            text-transform: uppercase;
+        }
+
+        .buttons__back {
+            width: 135px;
+            line-height: 40px;
+            font-weight: bold;
+            background-color: #FFFFFF;
+            border: 2px solid #0C5EA5;
+            border-radius: 40px;
+            text-align: center;
+            color: #0C5EA5;
+            text-transform: uppercase;
+            margin-left: 235px;
+        }
+
+        .additional-phone {
+            height: 20px;
+            border: none;
+            background-color: #fff;
+            text-transform: uppercase;
+            color: #0C5EA5;
+            font-weight: bold;
+            font-size: 13px;
+            letter-spacing: 0.3px;
+            line-height: 20px;
+        }
+
+        .file-upload {
+            width: 100%;
+        }
+
+
+    </style>
 </head>
 <body>
 <div id="user-information" class="container">
@@ -79,7 +403,7 @@
                         <span class="title-of-input">Password<sup>*</sup></span>
                     </label>
                     <label class="fields-block">
-                        <input type="password" class="field" placeholder="Confirm Password">
+                        <input type="password" class="field field-confirm" placeholder="Confirm Password*">
                         <span class="title-of-input"></span>
                     </label>
                 </div>
@@ -136,15 +460,15 @@
             </label>
         </div>
         <div class="registration-area">
-            <h2>Business information</h2>
             <div class="registration-area__fields">
+                <h2 class="fields-title">Business information</h2>
                 <div class="fields-start-end">
                     <label class="fields-block">
                         <input type="text" class="field">
                         <span class="title-of-input">Business Name<sup>*</sup></span>
                     </label>
                     <label class="fields-block">
-                        <select class="field">
+                        <select class="field field-select">
                             <option>Agriculture</option>
                         </select>
                         <span class="title-of-input">Business Category<sup>*</sup></span>
@@ -225,23 +549,23 @@
             </label>
         </div>
         <div class="registration-area">
-            <h2>Additional information</h2>
             <div class="registration-area__fields">
+                <h2 class="fields-title">Additional information</h2>
                 <div class="fields-start">
-                    <label class="fields-block">
-                        <input type="file" class="file-upload">
+                    <label class="fields-block fields-block-upload">
+                        <button class="buttons__continue">UPLOAD</button>
                         <span class="title-of-input">User Main Photo (You can use JPG, PNG and GIF formats)</span>
                     </label>
                 </div>
                 <div class="fields-start">
-                    <label class="fields-block">
-                        <input type="file" class="file-upload">
+                    <label class="fields-block fields-block-upload">
+                        <button class="buttons__continue">UPLOAD</button>
                         <span class="title-of-input">Photo Gallery Uploads (You can use JPG, PNG and GIF formats)</span>
                     </label>
                 </div>
                 <div class="fields-start">
-                    <label class="fields-block">
-                        <input type="file" class="file-upload">
+                    <label class="fields-block fields-block-upload">
+                        <button class="buttons__continue">UPLOAD</button>
                         <span class="title-of-input">Video Upload</span>
                     </label>
                 </div>
@@ -299,45 +623,45 @@
             </label>
         </div>
         <div class="registration-area">
-            <h2>Services</h2>
             <div class="registration-area__fields">
-                <h2>Service 1</h2>
+                <h2 class="fields-title">Services</h2>
+                <h2 class="fields-title fields-title-type">Service 1</h2>
                 <div class="fields-start-end">
                     <label class="fields-block">
                         <input type="text" class="field">
                         <span class="title-of-input">Title</span>
                     </label>
                     <label class="fields-block">
-                        <input type="text" class="field" placeholder="Description">
+                        <input type="text" class="field field-confirm" placeholder="Description">
                         <span></span>
                     </label>
                 </div>
                 <div class="fields-start">
-                    <label class="fields-block">
-                        <input type="file" class="file-upload">
+                    <label class="fields-block fields-block-upload">
+                        <button class="buttons__continue">UPLOAD</button>
                         <span class="title-of-input">User Main Photo (You can use JPG, PNG and GIF formats)</span>
                     </label>
                 </div>
                 <div class="fields-start">
-                    <label class="fields-block">
-                        <input type="file" class="file-upload">
-                        <span class="title-of-input">Photo Gallery Uploads (You can use JPG, PNG and GIF formats)</span>
+                    <label class="fields-block fields-block-upload">
+                        <button class="buttons__continue">UPLOAD</button>                        <span class="title-of-input">Photo Gallery Uploads (You can use JPG, PNG and GIF formats)</span>
                     </label>
                 </div>
                 <div class="fields-start-end">
                     <label class="fields-block">
-                        <select class="field">
+                        <select class="field field-select">
                             <option>United States Dollar (USD)</option>
                         </select>
                         <span class="title-of-input">Currency</span>
                     </label>
                     <label class="fields-block">
+                        <!--<span class="dollar">$</span>-->
+                        <input type="number" class="field">
                         <span class="title-of-input">Price</span>
-                        <span class="dollar">$</span><input type="number" class="field">
                     </label>
                 </div>
             </div>
-            <button class="buttons__reset">Additional service</button>
+            <button class="buttons__reset buttons__reset-left">Additional service</button>
             <div class="registration-area__buttons">
                 <button class="buttons__reset">Reset all</button>
                 <a href="#additional-information" class="buttons__back">Back</a>
