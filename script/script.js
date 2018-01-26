@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+    if ( $(window).width() < 769 ) {
+        $('.navigation').hide();
+        $('#step_1').show()
+    }
+
     $("body").on("touchstart", function(){
         if ( $(window).width() < 769 ) {
             if ( ( window.scrollY < $('#business-information').offset().top ) ){
